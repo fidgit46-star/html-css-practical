@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1080px;
+  font-family: "Noto Sans Japanese";
+}
+
+/**ナビゲーション**/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+#header-title a {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  text-decoration: none;
+  color: #000000;
+  padding: 0 20px 0 20px;
+  font-size: 34px;
+}
+#nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+#nav a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 34px;
+}
+#nav a:hover {
+  text-decoration: underline;
+}
+
+/**セクション共通**/
+.section-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+/**メイン**/
+#main img {
+  width: 100%;
+}
+
+/**About**/
+#about-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+#about-contents img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin: 0 50px;
+}
+#about-description {
+  margin-left: 50px;
+}
+#about-description p {
+  font-size: 24px;
+  font-weight: bold;
+}
+#about-description li {
+  font-size: 18px;
+}
+#about-description li::marker {
+  font-size: 0.6em;
+}
+
+/**Works**/
+#works-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 50px;
+  padding: 0 50px;
+}
+.works-contents {
+  width: 250px;
+  padding: 0 5px;
+}
+#works-flex img {
+  width: 240px;
+  height: 178px;
+}
+#works-flex p {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/**footer**/
+footer {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/**スマートフォン用**/
+@media screen and (max-width: 767px) {
+  /**ナビゲーション**/
+  #header-title a {
+    font-size: 28px;
+  }
+  #nav a {
+    font-size: 18px;
+  }
+  /**セクション共通**/
+  .section-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+  /**About**/
+  #about-contents {
+    flex-direction: column;
+    margin: 0;
+  }
+  /**Works**/
+  #works-flex {
+    flex-direction: column;
+    margin: 0;
+  }
+  .works-contents {
+    width: 100%;
+  }
+  #works-flex img {
+    width: 100%;
+    height: auto;
+  }
+}

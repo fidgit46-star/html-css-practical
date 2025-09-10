@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1080px;
   font-family: "Noto Sans Japanese";
 }
 
 /**ナビゲーション**/
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 500px;
   align-items: center;
   margin: 0 20px;
 }
